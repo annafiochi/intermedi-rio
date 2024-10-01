@@ -7,3 +7,4 @@ CREATE TABLE criancas (
     idade DECIMAL
 );
 
+
