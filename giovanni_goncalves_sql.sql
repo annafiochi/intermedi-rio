@@ -1,42 +1,42 @@
-SELECT COUNT(*) FROM Criança;
+SELECT COUNT(*) FROM criancas;
 
-SELECT COUNT(DISTINCT ID_responsavel) FROM Criança;
+SELECT COUNT(DISTINCT id) FROM criancas;
 
-SELECT SUM(Salario) FROM Funcionário;
+SELECT SUM(data_nascimento) FROM criancas;
 
-SELECT AVG(Salario) FROM Funcionário;
+SELECT AVG(data_nascimento) FROM criancas;
 
-SELECT MIN(Salario) FROM Funcionário;
+SELECT MIN(idade) FROM criancas;
 
-SELECT MAX(Salario) FROM Funcionário;
+SELECT MAX(idade) FROM criancas;
 
-SELECT ID_turma, COUNT(*) FROM Criança GROUP BY ID_turma;
+SELECT id, COUNT(*) FROM criancas GROUP BY id;
 
-SELECT Cargo, SUM(Salario) FROM Funcionário GROUP BY Cargo;
+SELECT data_matricula, SUM(idade) FROM criancas GROUP BY data_matricula;
 
-SELECT Cargo, AVG(Salario) FROM Funcionário GROUP BY Cargo;
+SELECT data_matricula, AVG(idade) FROM criancas GROUP BY data_matricula;
 
-SELECT ID_responsavel, COUNT(*) FROM Criança GROUP BY ID_responsavel HAVING COUNT(*) > 2;
+SELECT id, COUNT(*) FROM criancas GROUP BY id HAVING COUNT(*) > 2;
 
-SELECT UPPER(Nome) FROM Criança;
+SELECT UPPER(nome) FROM criancas;
 
-SELECT LOWER(Nome) FROM Responsável;
+SELECT LOWER(nome) FROM criancas;
 
-SELECT CONCAT(Nome, ' - ', Cargo) FROM Funcionário;
+SELECT CONCAT(nome, ' - ', data_nascimento) FROM criancas;
 
-SELECT SUBSTRING(Nome, 1, 3) FROM Criança;
+SELECT SUBSTRING(nome, 1, 3) FROM criancas;
 
-SELECT CHAR_LENGTH(Nome) FROM Responsável;
+SELECT CHAR_LENGTH(nome) FROM criancas;
 
-SELECT REPLACE(Nome, 'a', 'e') FROM Criança;
+SELECT REPLACE(nome, 'a', 'e') FROM criancas;
 
-SELECT TRIM(Nome) FROM Funcionário;
+SELECT TRIM(nome) FROM criancas;
 
-SELECT LEFT(Nome, 5) FROM Responsável;
+SELECT LEFT(nome, 5) FROM criancas;
 
-SELECT RIGHT(Nome, 5) FROM Funcionário;
+SELECT RIGHT(nome, 5) FROM criancas;
 
-SELECT POSITION('Silva' IN Nome) FROM Responsável;
+SELECT POSITION('Santana' IN nome) FROM criancas;
 
 SELECT CURDATE();
 
@@ -46,36 +46,35 @@ SELECT MONTH(CURDATE());
 
 SELECT DAY(CURDATE());
 
-SELECT Nome, DATEDIFF(CURDATE(), Data_admissao) AS Dias_admissao FROM Funcionário;
+SELECT Nome, DATEDIFF(CURDATE(), data_nascimento) AS data_nascimento FROM criancas;
 
-SELECT DATE_FORMAT(Data_nascimento, '%d/%m/%Y') FROM Criança;
+SELECT DATE_FORMAT(data_nascimento, '%d/%m/%Y') FROM criancas;
 
-SELECT YEAR(Data_nascimento) FROM Criança;
+SELECT YEAR(data_nascimento) FROM criancas;
 
-SELECT MONTH(Data_nascimento) FROM Criança;
+SELECT MONTH(data_nascimento) FROM criancas;
 
-SELECT DAYOFWEEK(Data_nascimento) FROM Criança;
+SELECT DAYOFWEEK(data_nascimento) FROM criancas;
 
-SELECT WEEK(Data_nascimento) FROM Criança;
+SELECT WEEK(data_nascimento) FROM criancas;
 
-SELECT Nome, IF(Salario > 2000, 'Acima da Média', 'Abaixo da Média') AS Comparacao FROM Funcionário;
+SELECT nome, IF(idade > 4, 'Quase idade maxima', 'Abaixo da idade media') AS Comparacao FROM Funcionário;
 
-SELECT COALESCE(Telefone, 'Sem Telefone') FROM Responsável;
+SELECT COALESCE(idade, 'Não encontrada') FROM criancas;
 
-SELECT Nome, NULLIF(Salario, 0) FROM Funcionário;
+SELECT nome, NULLIF(idade, 6) FROM criancas;
 
- 
-SELECT Nome, GREATEST(Salario, 3000) FROM Funcionário;
+SELECT nome, GREATEST(data_nascimento, 2021) FROM criancas;
 
-SELECT Nome, LEAST(Salario, 3000) FROM Funcionário;
+SELECT nome, LEAST(idade, 3) FROM criancas;
 
-SELECT Nome, 
+SELECT nome, 
    CASE
-      WHEN YEAR(CURDATE()) - YEAR(Data_nascimento) < 3 THEN 'Bebê'
-      WHEN YEAR(CURDATE()) - YEAR(Data_nascimento) BETWEEN 3 AND 5 THEN 'Infantil'
+      WHEN YEAR(CURDATE()) - YEAR(data_nascimento) < 3 THEN 'Novo'
+      WHEN YEAR(CURDATE()) - YEAR(data_nascimento) BETWEEN 3 AND 5 THEN 'Quase no fim'
       ELSE 'Pré-escolar'
-   END AS Faixa_etaria
-   FROM Criança;
+   END AS idade
+   FROM criancas;
 
 SELECT Nome, ROUND(Salario, 2) FROM Funcionário;
 
