@@ -1,5 +1,5 @@
 Entidade: crianças;
 
 Atributos: 
-crianças = id, nome, data de nascimento, data da matricula, idade.
+crianças = id, nome, data de nascimento, data da matricula, sexo, idade.
 
