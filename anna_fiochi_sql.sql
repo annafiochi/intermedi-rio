@@ -149,7 +149,7 @@ INSERT INTO criancas (id, nome, data_matricula, data_nascimento, idade) VALUES
 (146, 'Georgina Rodrigues, '2023-04-06', '2010-11-04', 13),
 (147, 'Hailey Bieber', '2023-01-10', '2014-04-29', 9),
 (148, 'Ronaldinho Gaucho', '2023-02-23', '2011-03-30', 12),
-(149, ' Chica Boarte', '2023-03-08', '2010-02-18', 14), 
+(149, 'Chica Boarte', '2023-03-08', '2010-02-18', 14), 
 (150, 'Alecio Cau', '2023-04-01', '2012-11-12', 10), 
 (151, 'Lucimara Bigode', '2023-01-14', '2013-08-04', 10), 
 (152, 'Franklin Ocean', '2023-02-13', '2014-07-13', 9), 
