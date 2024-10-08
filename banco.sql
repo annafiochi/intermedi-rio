@@ -4,6 +4,7 @@ CREATE TABLE criancas (
     nome VARCHAR(100),
     data_nascimento DATE,
     data_matricula date,
+    sexo VARCHAR (200)
     idade DECIMAL
 );
 
