@@ -40,9 +40,9 @@ SELECT * FROM criancas ORDER BY nome ASC;
 
 SELECT * FROM ORDER BY idade DESC;
 
-SELECT(*) FROM criancas WHERE sexo = "masculino";
+SELECT(*) FROM criancas WHERE sexo = "Masculino";
 
-SELECT(*) FROM criancas WHERE sexo = "feminino";
+SELECT(*) FROM criancas WHERE sexo = "Feminino";
 
 SELECT nome FROM criancas ORDER BY data_nascimento DESC LIMIT 1;
 
@@ -60,7 +60,7 @@ SELECT * FROM criancas WHERE MONTH(data_nascimento) = 1;
 
 SELECT nome, YEAR(data_nascimento) FROM criancas;
 
-SELECT * FROM criancas WHERE idade > 5 AND sexo = 'feminino';
+SELECT * FROM criancas WHERE idade > 5 AND sexo = 'Feminino';
 
 SELECT * FROM criancas WHERE YEAR(data_nascimento) < 2018;
 
@@ -72,9 +72,9 @@ SELECT * FROM criancas WHERE MONTH(data_nascimento) BETWEEN 1 AND 3;
 
 SELECT nome, idade FROM criancas ORDER BY idade DESC;
 
-SELECT * FROM criancas WHERE YEAR(data_nascimento) > 2009 AND sexo = 'masculino';
+SELECT * FROM criancas WHERE YEAR(data_nascimento) > 2009 AND sexo = 'Masculino';
 
-SELECT * FROM criancas WHERE YEAR(data_nascimento) < 2009 AND sexo = 'masculino';
+SELECT * FROM criancas WHERE YEAR(data_nascimento) < 2009 AND sexo = 'Masculino';
 
 SELECT nome, idade FROM criancas ORDER BY data_matricula DESC;
 
