@@ -1,6 +1,6 @@
 
 anna fioch
-INSERT INTO criancas (id, nome, data_matricula, data_nascimento, idade) VALUES
+INSERT INTO criancas (id, nome, data_matricula, data_nascimento, sexo, idade) VALUES
 (1, 'Anna Souza', '2023-01-10', '2012-05-12', 11), 
 (2, 'João Silva', '2023-02-15', '2010-10-30', 13), 
 (3, 'Maria Fiochi', '2023-03-20', '2011-08-24', 12), 
@@ -136,7 +136,7 @@ INSERT INTO criancas (id, nome, data_matricula, data_nascimento, idade) VALUES
 (133, 'Pelé Edson', '2023-03-30', '2011-01-09', 12),
 (134, 'Richard Rios', '2023-04-12', '2012-08-07', 11),
 (135, 'Rodrigo Garro', '2023-01-12', '2013-10-21', 9), 
-(136, Marta Silva', '2023-02-27', '2010-06-13', 13),
+(136, 'Marta Silva', '2023-02-27', '2010-06-13', 13),
 (137, 'Gabriela Portilio', '2023-03-11', '2011-12-25', 11),
 (138, 'Alisson Becker', '2023-04-07', '2014-02-17', 10), 
 (139, 'Duda Furnier', '2023-01-20', '2012-05-23', 11), 
