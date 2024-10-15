@@ -8,203 +8,101 @@ CREATE TABLE criancas (
 );
 
 
-UPDATE criancas SET nome =
-SELECT * FROM criancas WHERE =
-UPDATE criancas SET data_nascimento =
-SELECT * FROM criancas WHERE =
-UPDATE criancas SET data_matricula =
-SELECT * FROM criancas WHERE =
-UPDATE criancas SET idade =
-SELECT * FROM criancas WHERE =
-UPDATE criancas SET data_matricula =
-SELECT * FROM criancas WHERE =
-UPDATE criancas SET nome =
-SELECT * FROM criancas WHERE =
-UPDATE criancas SET sexo =
-SELECT * FROM criancas WHERE =
-UPDATE criancas SET idade =
-SELECT * FROM criancas WHERE =
-UPDATE criancas SET data_nascimento =
-SELECT * FROM criancas WHERE =
-UPDATE criancas SET data_matricula =
-SELECT * FROM criancas WHERE =
-UPDATE criancas SET sexo =
-SELECT * FROM criancas WHERE =
-UPDATE criancas SET nome =
-SELECT * FROM criancas WHERE =
-UPDATE criancas SET data_matricula =
-SELECT * FROM criancas WHERE =
-UPDATE criancas SET data_nascimento =
-SELECT * FROM criancas WHERE =
-UPDATE criancas SET idade =
-SELECT * FROM criancas WHERE =
-UPDATE criancas SET sexo =
-SELECT * FROM criancas WHERE =
-UPDATE criancas SET data_nascimento =
-SELECT * FROM criancas WHERE =
-UPDATE criancas SET data_matricula =
-SELECT * FROM criancas WHERE =
-UPDATE criancas SET idade =
-SELECT * FROM criancas WHERE =
-UPDATE criancas SET nome =
-SELECT * FROM criancas WHERE =
-UPDATE criancas SET data_matricula =
-SELECT * FROM criancas WHERE =
-UPDATE criancas SET data_nascimento =
-SELECT * FROM criancas WHERE =
-UPDATE criancas SET idade =
-SELECT * FROM criancas WHERE =
-UPDATE criancas SET sexo =
-SELECT * FROM criancas WHERE =
-UPDATE criancas SET data_matricula =
-SELECT * FROM criancas WHERE =
-UPDATE criancas SET data_nascimento =
-SELECT * FROM criancas WHERE =
-UPDATE criancas SET nome =
-SELECT * FROM criancas WHERE =
-UPDATE criancas SET data_matricula =
-SELECT * FROM criancas WHERE =
-UPDATE criancas SET sexo =
-SELECT * FROM criancas WHERE =
-UPDATE criancas SET idade =
-SELECT * FROM criancas WHERE =
-UPDATE criancas SET nome =
-SELECT * FROM criancas WHERE =
-UPDATE criancas SET data_matricula =
-SELECT * FROM criancas WHERE =
-UPDATE criancas SET data_nascimento =
-SELECT * FROM criancas WHERE =
-UPDATE criancas SET sexo =
-SELECT * FROM criancas WHERE =
-UPDATE criancas SET idade =
-SELECT * FROM criancas WHERE =
-UPDATE criancas SET data_matricula =
-SELECT * FROM criancas WHERE =
-UPDATE criancas SET data_nascimento =
-SELECT * FROM criancas WHERE =
-UPDATE criancas SET nome =
-SELECT * FROM criancas WHERE =
-UPDATE criancas SET sexo =
-SELECT * FROM criancas WHERE =
-UPDATE criancas SET data_matricula =
-SELECT * FROM criancas WHERE =
-UPDATE criancas SET nome =
-SELECT * FROM criancas WHERE =
-UPDATE criancas SET sexo =
-SELECT * FROM criancas WHERE =
-UPDATE criancas SET data_nascimento =
-SELECT * FROM criancas WHERE =
-UPDATE criancas SET data_matricula =
-SELECT * FROM criancas WHERE =
-UPDATE criancas SET sexo =
-SELECT * FROM criancas WHERE =
-UPDATE criancas SET data_nascimento =
-SELECT * FROM criancas WHERE =
-UPDATE criancas SET idade =
-SELECT * FROM criancas WHERE =
-UPDATE criancas SET data_matricula =
-SELECT * FROM criancas WHERE =
-UPDATE criancas SET nome =
-SELECT * FROM criancas WHERE =
-UPDATE criancas SET sexo =
-SELECT * FROM criancas WHERE =
-UPDATE criancas SET nome =
-SELECT * FROM criancas WHERE =
-UPDATE criancas SET idade =
-SELECT * FROM criancas WHERE =
-UPDATE criancas SET data_matricula =
-SELECT * FROM criancas WHERE =
-UPDATE criancas SET data_nascimento =
-SELECT * FROM criancas WHERE =
-UPDATE criancas SET sexo=
-SELECT * FROM criancas WHERE =
-UPDATE criancas SET idade =
-SELECT * FROM criancas WHERE =
-UPDATE criancas SET data_matricula =
-SELECT * FROM criancas WHERE =
-UPDATE criancas SET data_nascimento =
-SELECT * FROM criancas WHERE =
-UPDATE criancas SET sexo =
-SELECT * FROM criancas WHERE =
-UPDATE criancas SET idade =
-SELECT * FROM criancas WHERE =
-UPDATE criancas SET data_matricula =
-SELECT * FROM criancas WHERE =
-UPDATE criancas SET data_nascimento =
-SELECT * FROM criancas WHERE =
-UPDATE criancas SET idade =
-SELECT * FROM criancas WHERE =
-UPDATE criancas SET sexo =
-SELECT * FROM criancas WHERE =
-UPDATE criancas SET data_matricula =
-SELECT * FROM criancas WHERE =
-UPDATE criancas SET data_nascimento =
-SELECT * FROM criancas WHERE =
-UPDATE criancas SET nome =
-SELECT * FROM criancas WHERE =
-UPDATE criancas SET idade =
-SELECT * FROM criancas WHERE =
-UPDATE criancas SET sexo =
-SELECT * FROM criancas WHERE =
-UPDATE criancas SET data_nascimento =
-SELECT * FROM criancas WHERE =
-UPDATE criancas SET nome =
-SELECT * FROM criancas WHERE =
-UPDATE criancas SET idade =
-SELECT * FROM criancas WHERE =
-UPDATE criancas SET nome =
-SELECT * FROM criancas WHERE =
-UPDATE criancas SET data_matricula =
-SELECT * FROM criancas WHERE =
-UPDATE criancas SET sexo =
-SELECT * FROM criancas WHERE =
-UPDATE criancas SET nome =
-SELECT * FROM criancas WHERE =
-UPDATE criancas SET idade =
-SELECT * FROM criancas WHERE =
-UPDATE criancas SET data_matricula =
-SELECT * FROM criancas WHERE =
-UPDATE criancas SET data_nascimento =
-SELECT * FROM criancas WHERE =
-UPDATE criancas SET sexo =
-SELECT * FROM criancas WHERE =
-UPDATE criancas SET idade =
-SELECT * FROM criancas WHERE =
-UPDATE criancas SET nome =
-SELECT * FROM criancas WHERE =
-UPDATE criancas SET data_matricula =
-SELECT * FROM criancas WHERE =
-UPDATE criancas SET data_nascimento =
-SELECT * FROM criancas WHERE =
-UPDATE criancas SET idade =
-SELECT * FROM criancas WHERE =
-UPDATE criancas SET sexo =
-SELECT * FROM criancas WHERE =
-UPDATE criancas SET data_matricula =
-SELECT * FROM criancas WHERE =
-UPDATE criancas SET data_nascimento =
-SELECT * FROM criancas WHERE =
-UPDATE criancas SET nome =
-SELECT * FROM criancas WHERE =
-UPDATE criancas SET data_matricula =
-SELECT * FROM criancas WHERE =
-UPDATE criancas SET sexo =
-SELECT * FROM criancas WHERE =
-UPDATE criancas SET data_nascimento =
-SELECT * FROM criancas WHERE =
-UPDATE criancas SET nome =
-SELECT * FROM criancas WHERE =
-UPDATE criancas SET idade =
-SELECT * FROM criancas WHERE =
-UPDATE criancas SET sexo =
-SELECT * FROM criancas WHERE =
-UPDATE criancas SET data_matricula =
-SELECT * FROM criancas WHERE =
-UPDATE criancas SET data_nascimento =
-SELECT * FROM criancas WHERE =
-UPDATE criancas SET nome =
-SELECT * FROM criancas WHERE =
-UPDATE criancas SET sexo =
-SELECT * FROM criancas WHERE =
-UPDATE criancas SET data_matricula =
-SELECT * FROM criancas WHERE =
+UPDATE criancas SET nome = 'Mariana' WHERE id = 20;
+UPDATE criancas SET data_nascimento = '2011-06-29' WHERE id = 15;
+UPDATE criancas SET data_matricula = '2023-03-05' WHERE id = 25;
+UPDATE criancas SET idade = 12 WHERE id = 36;
+UPDATE criancas SET data_matricula = '2023-04-05' WHERE id = 7;
+UPDATE criancas SET nome = 'Hugo Lima' WHERE id = 45;
+UPDATE criancas SET sexo = 'Feminino' WHERE id = 38;
+UPDATE criancas SET idade = 2 WHERE id = 50;
+UPDATE criancas SET data_nascimento = '2011-03-11' WHERE id = 50;
+UPDATE criancas SET data_matricula = '2023-03-07' WHERE id = 77;
+UPDATE criancas SET sexo = 'Feminino' WHERE id = 77;
+UPDATE criancas SET nome = 'Aline Camargo' WHERE id = 73;
+UPDATE criancas SET data_matricula = '2023-01-30' WHERE id = 83;
+UPDATE criancas SET data_nascimento = '2010-05-13' WHERE id = 76;
+UPDATE criancas SET idade = 2 WHERE id = 90;
+UPDATE criancas SET sexo = 'Masculino' WHERE id = 103;
+UPDATE criancas SET data_nascimento = '2014-08-08' WHERE id = 119;
+UPDATE criancas SET data_matricula = '2023-01-12' WHERE id = 135;
+UPDATE criancas SET idade = 10 WHERE id = 56;
+UPDATE criancas SET nome = 'Lara Souza' WHERE id = 67;
+UPDATE criancas SET data_matricula = '2023-04-15' WHERE id = 118;
+UPDATE criancas SET data_nascimento = '2012-07-17' WHERE id = 198;
+UPDATE criancas SET idade = 1 WHERE id = 180;
+UPDATE criancas SET sexo = 'Masculino' WHERE id = 174;
+UPDATE criancas SET data_matricula = '2023-03-28' WHERE id = 185;
+UPDATE criancas SET data_nascimento = '2011-12-14' WHERE id = 175;
+UPDATE criancas SET nome = 'Esther Souza' WHERE id = 190;
+UPDATE criancas SET data_matricula = '2023-02-14' WHERE id = 196;
+UPDATE criancas SET sexo = 'Masculino' WHERE id = 166;
+UPDATE criancas SET idade = 5 WHERE id = 5;
+UPDATE criancas SET nome = 'Lucas Macedo' WHERE id = 166;
+UPDATE criancas SET data_matricula = '2023-01-13' WHERE id = 191;
+UPDATE criancas SET data_nascimento = '2013-11-11' WHERE id = 197;
+UPDATE criancas SET sexo = 'Feminino' WHERE id = 198;
+UPDATE criancas SET idade = 1 WHERE id = 198;
+UPDATE criancas SET data_matricula = '2023-01-20' WHERE id = 67;
+UPDATE criancas SET data_nascimento = '2014-09-19' WHERE id = 97;
+UPDATE criancas SET nome = 'Breno Godoi' WHERE id = 125;
+UPDATE criancas SET sexo = 'Masculino' WHERE id = 140;
+UPDATE criancas SET data_matricula = '2023-01-27' WHERE id = 111;
+UPDATE criancas SET nome = 'Carol Candido' WHERE id = 115;
+UPDATE criancas SET sexo = 'Masculino' WHERE id = 124;
+UPDATE criancas SET data_nascimento = '2012-05-23' WHERE id = 139;
+UPDATE criancas SET data_matricula = '2023-02-28' WHERE id = 156;
+UPDATE criancas SET sexo = 'Masculino' WHERE id = 168;
+UPDATE criancas SET data_nascimento = '2010-08-06' WHERE id = 182
+UPDATE criancas SET idade = 5 WHERE id = 193;
+UPDATE criancas SET data_matricula = '2023-01-16' WHERE id = 199;
+UPDATE criancas SET nome = 'Ronaldinho Gaucho' WHERE id = 148;
+UPDATE criancas SET sexo = 'Masculino' WHERE id = 176;
+UPDATE criancas SET nome = 'Kayne West' WHERE id = 154;
+UPDATE criancas SET idade = 4 WHERE id = 174;
+UPDATE criancas SET data_matricula = '2023-04-17' WHERE id = 186;
+UPDATE criancas SET data_nascimento ='2012-05-12' WHERE id = 1;
+UPDATE criancas SET sexo = 'Masculino' WHERE id = 23;
+UPDATE criancas SET idade = 12 WHERE id = 36;
+UPDATE criancas SET data_matricula = '2023-01-25' WHERE id = 55;
+UPDATE criancas SET data_nascimento = '2012-01-29' WHERE id = 69;
+UPDATE criancas SET sexo = 'Masculino' WHERE id = 86;
+UPDATE criancas SET idade = 4 WHERE id = 100;
+UPDATE criancas SET data_matricula = '2023-04-11' WHERE id = 114;
+UPDATE criancas SET data_nascimento = '2011-08-15' WHERE id = 128;
+UPDATE criancas SET idade = 1 WHERE id = 41;
+UPDATE criancas SET sexo = 'Feminino' WHERE id = 66;
+UPDATE criancas SET data_matricula = '2023-01-30' WHERE id = 83;
+UPDATE criancas SET data_nascimento = '2010-12-27' WHERE id = 96;
+UPDATE criancas SET nome = 'Lorena Tonetti' WHERE id = 111;
+UPDATE criancas SET idade = 2 WHERE id = 140;
+UPDATE criancas SET sexo = 'Feminino' WHERE id = 163;
+UPDATE criancas SET data_nascimento = '2013-02-04' WHERE id = 180;
+UPDATE criancas SET nome = 'Renan Melo' WHERE id = 197;
+UPDATE criancas SET idade = 1 WHERE id = 200;
+UPDATE criancas SET nome = 'Letícia Ribeiro' WHERE id = 198;
+UPDATE criancas SET data_matricula = '2023-04-01' WHERE id = 178;
+UPDATE criancas SET sexo = 'Masculino' WHERE id = 189;
+UPDATE criancas SET nome = 'Camila Ribeiro' WHERE id = 178;
+UPDATE criancas SET idade = 5 WHERE id = 193;
+UPDATE criancas SET data_matricula = '2023-04-03' WHERE id = 198;
+UPDATE criancas SET data_nascimento = '2014-10-26' WHERE id = 155;
+UPDATE criancas SET sexo = 'Feminino' WHERE id = 139;
+UPDATE criancas SET idade = 5 WHERE id = 152;
+UPDATE criancas SET nome = 'Bruno Berti' WHERE id = 156;
+UPDATE criancas SET data_matricula = '2023-02-11' WHERE id = 164;
+UPDATE criancas SET data_nascimento = '2012-08-15' WHERE id = 173;
+UPDATE criancas SET idade = 3 WHERE id = 157; 
+UPDATE criancas SET sexo = 'Masculino' WHERE id = 167;
+UPDATE criancas SET data_matricula = '2023-01-15' WHERE id = 171;
+UPDATE criancas SET data_nascimento = '2014-01-18' WHERE id = 189;
+UPDATE criancas SET nome = 'Franklin Ocean' WHERE id = 152;
+UPDATE criancas SET data_matricula = '2023-03-20' WHERE id = 169;
+UPDATE criancas SET sexo = 'Masculino' WHERE id = 182;
+UPDATE criancas SET nome = 'Liz Macedo' WHERE id = 164;
+UPDATE criancas SET idade = 1 WHERE id = 172;
+UPDATE criancas SET sexo = 'Feminino' WHERE id = 180;
+UPDATE criancas SET data_matricula = '2023-04-15' WHERE id = 194;
+UPDATE criancas SET nome = 'Bruna Santos' WHERE id = 165;
+UPDATE criancas SET sexo = 'Feminino' WHERE id = 151;
+UPDATE criancas SET data_matricula = '2023-04-05' WHERE id = 142;
