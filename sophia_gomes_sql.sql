@@ -6,13 +6,13 @@ SELECT nome, idade FROM criancas;
 
 SELECT * FROM criancas WHERE idade > 3;
 
-SELECT * FROM criancas WHERE (data_nascimento) BETWEEN 2009 AND 2015;
-
 SELECT nome, data_nascimento FROM criancas;
 
 SELECT * FROM criancas WHERE nome LIKE 'A%';
 
 SELECT * FROM criancas WHERE nome LIKE 'S%';
+
+SELECT * FROM criancas WHERE nome LIKE 'M%';
 
 SELECT * FROM criancas WHERE nome LIKE 'B%';
 
@@ -32,23 +32,21 @@ SELECT MAX(idade) FROM criancas;
 
 SELECT MIN(idade) FROM criancas;
 
-SELECT nome FROM criancas WHERE YEAR(data_nascimento) = 2020;
-
-SELECT * FROM criancas WHERE YEAR(data_matricula) > 2015;
+SELECT * FROM criancas WHERE nome LIKE 'I%';
 
 SELECT * FROM criancas ORDER BY nome ASC;
 
 SELECT * FROM ORDER BY idade DESC;
 
-SELECT(*) FROM criancas WHERE sexo = "Masculino";
+SELECT * FROM criancas WHERE sexo = "Masculino";
 
-SELECT(*) FROM criancas WHERE sexo = "Feminino";
+SELECT * FROM criancas WHERE sexo = "Feminino";
 
 SELECT nome FROM criancas ORDER BY data_nascimento DESC LIMIT 1;
 
 SELECT nome FROM criancas ORDER BY  data_nascimento ASC LIMIT 1;
 
-SELECT nome, idade FROM criancas ORDER BY idade DESC LIMIT;
+SELECT * FROM criancas WHERE idade = 6;
 
 SELECT * FROM criancas WHERE idade = 3;
 
@@ -56,13 +54,13 @@ SELECT * FROM criancas WHERE idade < 2;
 
 SELECT * FROM criancas WHERE idade < 5;
 
-SELECT * FROM criancas WHERE MONTH(data_nascimento) = 1;
-
-SELECT nome, YEAR(data_nascimento) FROM criancas;
+SELECT * FROM criancas WHERE idade > 5 AND sexo = 'Masculino';
 
 SELECT * FROM criancas WHERE idade > 5 AND sexo = 'Feminino';
 
-SELECT * FROM criancas WHERE YEAR(data_nascimento) < 2018;
+SELECT * FROM criancas WHERE idade < 6 AND sexo = 'Feminino';
+
+SELECT * FROM criancas WHERE data_nascimento =  2018;
 
 SELECT * FROM criancas WHERE YEAR(data_nascimento) < 2014;
 
@@ -118,7 +116,7 @@ SELECT * FROM criancas WHERE MONTH(data_nascimento) = 12;
 
 SELECT * FROM criancas WHERE MONTH(data_nascimento) = 10;
 
-SELECT * FROM criancas WHERE MONTH(data_nascimento) = MONTH C
+SELECT * FROM criancas WHERE idade < 5 AND sexo = 'Masculino';
 
 
 
