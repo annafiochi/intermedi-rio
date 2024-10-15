@@ -1,135 +1,186 @@
+
+/* 1 */
+SELECT SUM(idade) FROM criancas;
+
+/* 2 */
+SELECT AVG(idade) FROM criancas;
+
+/* 3 */
 SELECT COUNT(*) FROM criancas;
 
-SELECT COUNT(DISTINCT id) FROM criancas;
-
-SELECT SUM(data_nascimento) FROM criancas;
-
-SELECT AVG(data_nascimento) FROM criancas;
-
+/* 4 */
 SELECT MIN(idade) FROM criancas;
 
+/* 5 */
 SELECT MAX(idade) FROM criancas;
 
-SELECT id, COUNT(*) FROM criancas GROUP BY id;
+/* 6 */
+SELECT COUNT(*) FROM criancas WHERE idade < 5;
 
-SELECT data_matricula, SUM(idade) FROM criancas GROUP BY data_matricula;
+/* 7 */
+SELECT SUM(idade) FROM criancas WHERE data_matricula >= '2023-01-01';
 
+/* 8 */
+SELECT AVG(idade) FROM criancas WHERE data_matricula >= '2023-01-01';
+
+/* 9 */
 SELECT data_matricula, AVG(idade) FROM criancas GROUP BY data_matricula;
 
-SELECT id, COUNT(*) FROM criancas GROUP BY id HAVING COUNT(*) > 2;
+/* 10 */
+SELECT data_matricula, COUNT(*) FROM criancas GROUP BY data_matricula;
 
-SELECT UPPER(nome) FROM criancas;
+/* 11 */
+SELECT CURRENT_DATE;
 
-SELECT LOWER(nome) FROM criancas;
+/* 12 */
+SELECT CURRENT_TIME;
 
-SELECT CONCAT(nome, ' - ', data_nascimento) FROM criancas;
+/* 13 */
+SELECT COUNT(*) FROM criancas WHERE idade <3;
 
-SELECT SUBSTRING(nome, 1, 3) FROM criancas;
+/* 14 */
+SELECT * FROM criancas WHERE idade BETWEEN 5 AND 7 LIMIT 10;
 
-SELECT CHAR_LENGTH(nome) FROM criancas;
+/* 15 */
+SELECT * FROM criancas WHERE idade BETWEEN 5 AND 7 LIMIT 4;
 
-SELECT REPLACE(nome, 'a', 'e') FROM criancas;
+/* 16 */
 
-SELECT TRIM(nome) FROM criancas;
+/* 17 */
+SELECT * FROM criancas WHERE idade BETWEEN 2 AND 5 LIMIT 10;
 
-SELECT LEFT(nome, 5) FROM criancas;
+/* 18 */
+SELECT * FROM criancas WHERE idade BETWEEN 1 AND 3 LIMIT 8;
 
-SELECT RIGHT(nome, 5) FROM criancas;
+/* 19 */
+SELECT * FROM criancas WHERE idade BETWEEN 3 AND 5 LIMIT 2;
 
-SELECT POSITION('Santana' IN nome) FROM criancas;
+/* 20 */
+SELECT CEIL(idade) FROM criancas;
 
-SELECT CURDATE();
+/* 21 */
+SELECT FLOOR(idade) FROM criancas;
 
-SELECT YEAR(CURDATE());
+/* 22 */
+SELECT COUNT(*) FROM criancas WHERE idade >5;
 
-SELECT MONTH(CURDATE());
+/* 23 */
+SELECT COUNT(*) FROM criancas WHERE idade >3;
 
-SELECT DAY(CURDATE());
+/* 24 */
+SELECT COUNT(*) FROM criancas WHERE idade <2;
 
-SELECT Nome, DATEDIFF(CURDATE(), data_nascimento) AS data_nascimento FROM criancas;
+/* 25 */
+SELECT COUNT(*) FROM criancas WHERE idade >1;
 
-SELECT DATE_FORMAT(data_nascimento, '%d/%m/%Y') FROM criancas;
+/* 26 */
+SELECT LENGTH(nome) FROM criancas;
 
-SELECT YEAR(data_nascimento) FROM criancas;
+/* 27 */
+SELECT COUNT(*) FROM criancas WHERE sexo = 'Masculino';
 
-SELECT MONTH(data_nascimento) FROM criancas;
+/* 28*/
+SELECT COUNT(*) FROM criancas WHERE sexo = 'Masculino';
 
-SELECT DAYOFWEEK(data_nascimento) FROM criancas;
+/* 29 */
+SELECT COUNT(*) FROM criancas WHERE sexo = 'Feminino';
 
-SELECT WEEK(data_nascimento) FROM criancas;
+/* 30 */
+SELECT COUNT(*) FROM criancas WHERE EXTRACT(YEAR FROM data_nascimento) > 2015;
 
-SELECT nome, IF(idade > 4, 'Quase idade maxima', 'Abaixo da idade media') AS Comparacao FROM Funcionário;
+/* 31 */
+SELECT COUNT(*) FROM criancas WHERE EXTRACT(YEAR FROM data_matricula) = 2023;
 
-SELECT COALESCE(idade, 'Não encontrada') FROM criancas;
+/* 32 */
+SELECT COUNT(*) FROM criancas WHERE EXTRACT(YEAR FROM data_matricula) < 2020;
 
-SELECT nome, NULLIF(idade, 6) FROM criancas;
+/* 33 */
+SELECT COUNT(*) FROM criancas WHERE EXTRACT(YEAR FROM data_nascimento) > 2018;
 
-SELECT nome, GREATEST(data_nascimento, 2021) FROM criancas;
+/* 34 */
+SELECT COUNT(*) FROM criancas WHERE EXTRACT(YEAR FROM data_matricula) = 2013;
 
-SELECT nome, LEAST(idade, 3) FROM criancas;
+/* 35 */
+SELECT COUNT(*) FROM criancas WHERE EXTRACT(YEAR FROM data_matricula) = 2019;
 
-SELECT nome, 
-   CASE
-      WHEN YEAR(CURDATE()) - YEAR(data_nascimento) < 3 THEN 'Novo'
-      WHEN YEAR(CURDATE()) - YEAR(data_nascimento) BETWEEN 3 AND 5 THEN 'Quase no fim'
-      ELSE 'Pré-escolar'
-   END AS idade
-   FROM criancas;
+/* 36 */
+SELECT COUNT(*) FROM criancas WHERE EXTRACT(YEAR FROM data_matricula) = 2020;
 
-SELECT Nome, ROUND(Salario, 2) FROM Funcionário;
+/* 37 */
+SELECT COUNT(*) FROM criancas WHERE EXTRACT(YEAR FROM data_matricula) < 2015;
 
-SELECT Nome, ABS(Salario) FROM Funcionário;
+/* 38 */
+SELECT COUNT(*) FROM criancas WHERE EXTRACT(YEAR FROM data_matricula) < 2023;
 
-SELECT Nome, MOD(Salario, 100) FROM Funcionário;
+/* 39 */
+SELECT COUNT(*) FROM criancas WHERE EXTRACT(YEAR FROM data_matricula) < 2010;
 
-SELECT Nome, FLOOR(Salario) FROM Funcionário;
+/* 40 */
+SELECT COUNT(*) FROM criancas WHERE EXTRACT(YEAR FROM data_matricula) < 2012;
 
-SELECT Nome, CEIL(Salario) FROM Funcionário;
+/* 41 */
+SELECT COUNT(*) FROM criancas WHERE sexo = 'Masculino' AND idade > 6;
 
-SELECT Nome, POWER(Salario, 2) FROM Funcionário;
+/* 42 */
+SELECT COUNT(*) FROM criancas WHERE sexo = 'Masculino' AND idade > 2;
 
-SELECT Nome, SQRT(Salario) FROM Funcionário;
+/* 42 */
+SELECT COUNT(*) FROM criancas WHERE sexo = 'Masculino' AND idade > 1;
 
-SELECT Nome, SIGN(Salario) FROM Funcionário;
+/* 43 */
+SELECT COUNT(*) FROM criancas WHERE sexo = 'Masculino' AND idade < 5;
 
-SELECT DISTINCT Cargo FROM Funcionário;
+/* 44 */
+SELECT COUNT(*) FROM criancas WHERE sexo = 'Masculino' AND idade < 3;
 
-SELECT ID_responsavel, COUNT(*) FROM Criança GROUP BY ID_responsavel;
+/* 45 */
+SELECT COUNT(*) FROM criancas WHERE sexo = 'Feminino' AND idade < 4;
 
-SELECT Nome, Salario FROM Funcionário ORDER BY Salario DESC;
+/* 46 */
+SELECT COUNT(*) FROM criancas WHERE sexo = 'Feminino' AND idade < 5;
 
-SELECT * FROM Criança LIMIT 5;
+/* 47 */
+SELECT COUNT(*) FROM criancas WHERE sexo = 'Feminino' AND idade < 2;
 
-SELECT * FROM Criança LIMIT 5 OFFSET 5;
+/* 48 */
+SELECT COUNT(*) FROM criancas WHERE sexo = 'Feminino' AND idade > 4;
 
-SELECT Nome FROM Criança
-   UNION
-   SELECT Nome FROM Responsável;
+/* 49 */
+SELECT COUNT(*) FROM criancas WHERE sexo = 'Feminino' AND idade > 2;
 
-SELECT Nome FROM Responsável WHERE EXISTS (SELECT * FROM Criança WHERE Criança.ID_responsavel = Responsável.ID_responsavel);
+/* 50 */
+SELECT SUM(idade) FROM criancas WHERE sexo = 'Masculino';
 
-  SELECT C.Nome, R.Nome AS Responsável
-   FROM Criança C
-   JOIN Responsável R ON C.ID_responsavel = R.ID_responsavel;
+/* 51 */
+SELECT SUM(idade) FROM criancas WHERE sexo = 'Feminino';
 
-SELECT Cargo, COUNT(*) FROM Funcionário GROUP BY Cargo HAVING COUNT(*) > 1;
+/* 52 */
+SELECT SUM(idade) FROM criancas WHERE idade > 5;
 
-SELECT C.Nome, R.Nome AS Responsável
-   FROM Criança C
-   LEFT JOIN Responsável R ON C.ID_responsavel = R.ID_responsavel;
+/* 53 */
+SELECT SUM(idade) FROM criancas WHERE idade > 4;
 
-SELECT R.Nome, C.Nome AS Criança
-   FROM Responsável R
-   RIGHT JOIN Criança C ON C.ID_responsavel = R.ID_responsavel;
+/* 54 */
+SELECT SUM(idade) FROM criancas WHERE idade > 3;
 
-SELECT C.Nome, R.Nome AS Responsável
-   FROM Criança C
-   FULL OUTER JOIN Responsável R ON C.ID_responsavel = R.ID_responsavel;
+/* 55 */
+SELECT SUM(idade) FROM criancas WHERE idade < 2;
 
-SELECT Nome FROM Funcionário WHERE Cargo IN ('Professor', 'Diretor');
+/* 56 */
+SELECT SUM(idade) FROM criancas WHERE idade < 3;
 
-SELECT Nome FROM Criança WHERE YEAR(CURDATE()) - YEAR(Data_nascimento) BETWEEN 3 AND 5;
+/* 57 */
+SELECT SUM(idade) FROM criancas WHERE idade < 5;
 
-SELECT Nome FROM Responsável WHERE Nome LIKE 'A%';
+/* 58 */
+SELECT SUM(idade) FROM criancas WHERE sexo = 'Masculino' AND idade < 5;
 
-SELECT Nome FROM Criança WHERE Nome NOT LIKE '%a';
+/* 59 */
+SELECT SUM(idade) FROM criancas WHERE sexo = 'Masculino' AND idade > 3;
+
+/* 60 */
+SELECT SUM(idade) FROM criancas WHERE sexo = 'Feminino' AND idade > 3;
+
+/* 61*/
+SELECT SUM(idade) FROM criancas WHERE sexo = 'Feminino' AND idade < 5;
+
